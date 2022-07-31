@@ -1,14 +1,50 @@
 <p style="color: green"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <h1>Bienvenido a la Zona Constructor</h1>
+    </div>
+  </div>
 
-<h1>Builders</h1>
+  <div class="card my-3 mx-5">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <%= image_tag "logo-fixer", class:"logo-body" %>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Quieres ser parte de este Equipo?</h5>
+          <p class="card-text">Solo registrate como Constructor y ya estarás siendo parte de nuestro equipo y recibiendo proyectos para cotizar. Así de fácil!!!</p>
+          <button type="button" class="btn btn-dark btn-lg"><%= link_to "Registrarme ", new_builder_path %></button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div id="builders">
-  <% @builders.each do |builder| %>
-    <%= render builder %>
-    <p>
-      <%= link_to "Show this builder", builder %>
-    </p>
-  <% end %>
 </div>
 
-<%= link_to "New builder", new_builder_path %>
+<div id="proyects">
+  <% @proyects.each do |proyect| %>
+    <%= render proyect %>
+    <p>
+      <%= link_to "Show this proyect", proyect %>
+    </p>
+  <% end %>
+</div> 
+
+    <!-- <div id="builders">
+        <% @builders.each do |builder| %>
+          <%= render builder %>
+          <p>
+            <%= link_to "Show this builder", builder %>
+          </p>
+        <% end %>
+      </div>
+      <%= link_to "New builder", new_builder_path %>
+    -->

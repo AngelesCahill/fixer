@@ -4,6 +4,7 @@ class BuildersController < ApplicationController
   # GET /builders or /builders.json
   def index
     @builders = Builder.all
+    @proyects = Proyect.all
   end
 
   # GET /builders/1 or /builders/1.json

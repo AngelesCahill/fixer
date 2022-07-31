@@ -4,7 +4,7 @@ class CreatePayments < ActiveRecord::Migration[7.0]
       t.string :card
       t.integer :number
       t.string :expiration
-      t.integer :monto
+      t.integer :monto, default: "6.500"
       t.references :proyect, null: false, foreign_key: true
 
       t.timestamps

@@ -4,7 +4,7 @@
 
 <div>
   <%= link_to "Edit this proyect", edit_proyect_path(@proyect) %> |
-  <%= link_to "Back to proyects", proyects_path %>
+  <%= link_to "Pagar", new_payment_path(@proyect[:id]) %>
 
   <%= button_to "Destroy this proyect", @proyect, method: :delete %>
 </div>

@@ -11,29 +11,34 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :card, style: "display: block" %>
-    <%= form.text_field :card %>
+  <div class="mt-5 m-0 ">
+    <img src="https://i.pinimg.com/originals/b6/3b/54/b63b54d4f0074710e9dd0f8e6d3c9fbd.jpg" style="width: 100px; height: 30px;">
+    <select name="card" action="get" class="form-select p-0 ms-auto me-auto mt-2" aria-label="Default select example" style="width: 200px">
+      <option selected>Seleccione su tarjeta</option>
+      <option value="1">Visa</option>
+      <option value="2">Master</option>
+    </select>
   </div>
 
   <div>
-    <%= form.label :number, style: "display: block" %>
+    <%= form.label :number, style: "display: block", class:"mt-2" %>
     <%= form.number_field :number %>
   </div>
 
   <div>
-    <%= form.label :expiration, style: "display: block" %>
+    <%= form.label :expiration, style: "display: block", class:"mt-2"  %>
     <%= form.text_field :expiration %>
+    <p>Formato fecha dd/mm/aa </p>
   </div>
 
   <div>
-    <%= form.label :monto, style: "display: block" %>
-    <%= form.number_field :monto %>
+    <%= form.label :monto, style: "display: block", class:"mt-2"  %>
+    <%= form.label :$6500 %>
   </div>
 
   <div>
-    <%= form.label :proyect_id, style: "display: block" %>
-    <%= form.text_field :proyect_id %>
+    <%= form.label :proyect_id, style: "display: block", class:"mt-2"  %>
+    <%= form.text_field :proyect_id, class:"mb-4" %>
   </div>
 
   <div>
