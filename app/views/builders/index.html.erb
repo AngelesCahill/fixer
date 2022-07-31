@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Builders</h1>
+
+<div id="builders">
+  <% @builders.each do |builder| %>
+    <%= render builder %>
+    <p>
+      <%= link_to "Show this builder", builder %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New builder", new_builder_path %>

@@ -1,0 +1,109 @@
+<p style="color: green"><%= notice %></p>
+
+<div id="ideas" class="row">
+  <div class="col-2">
+    <a class="foto-ideas" href="#">
+      <img src="https://www.hola.com/imagenes/decoracion/20210215184361/cocinas-modernas-integrar-madera-mc/0-919-885/madera-cocina-m.jpg" alt="" width="200" height="200">
+    </a>
+  </div>
+  <div class="col-2">
+    <a class="foto-ideas" href="#">
+      <img src="https://www.hola.com/imagenes/decoracion/20200424166556/orden-casa-accesorios-cocina-mejor-organizada-mc/0-815-882/accesorios-cocina-orden-m.jpg" alt="" width="200" height="200">
+    </a>
+  </div>
+  <div class="col-2">
+    <a class="foto-ideas" href="#">
+      <img src="https://sc02.alicdn.com/kf/HTB1xrBxXUrrK1RkSne1q6ArVVXaa/202757231/HTB1xrBxXUrrK1RkSne1q6ArVVXaa.jpg_.webp" alt="" width="200" height="200">
+    </a>
+  </div>
+  <div class="col-2">
+    <a class="foto-ideas" href="#">
+      <img src="https://hips.hearstapps.com/es.h-cdn.co/mcres/images/mi-casa/cocinas/cocinas-con-office/cocina-blanca-con-encimera-de-madera/1134668-1-esl-ES/cocina-blanca-con-encimera-de-madera.jpg?crop=0.731xw:0.974xh;0.123xw,0.0171xh&resize=640:*" alt="" width="200" height="200">
+    </a>
+  </div>
+  <div class="col-2">
+    <a class="foto-ideas" href="#">
+      <img src="https://images.hola.com/imagenes/decoracion/20200217160191/decoracion-cocinas-imprescindibles-cocina-moderna/0-780-736/cocina-moderna-7t-t.jpg" alt="" width="200" height="200">
+    </a>
+  </div>
+  <div class="col-2">
+    <a class="foto-ideas" href="#">
+      <img src="https://discesur.es/wp-content/uploads/2020/10/25052020-SANTOS-GRIS-VISION-SEDA-1030x774.jpg" alt="" width="200" height="200">
+    </a>
+  </div>
+</div>
+<div class="row my-3 marcas"></div>
+  <div class="col-4 d-inline-block marcas" style="width: 18rem;">
+    <%= image_tag "construmart", class:"logo-public" %>
+  </div>
+  <div class="col-4 d-inline-block marcas" style="width: 18rem;">
+    <%= image_tag "yolito", class:"logo-public" %>
+  </div>
+  <div class="col-4 d-inline-block marcas" style="width: 18rem;">
+    <%= image_tag "sodimac", class:"logo-public" %>
+  </div>
+</div>
+
+
+<div class="card my-3 mx-5">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <%= image_tag "logo-fixer", class:"logo-body" %>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Alguna idea en mente?</h5>
+        <p class="card-text">Ingresa tu proyecto y obtén cotizaciones de profesionales serios.</p>
+        <br>
+        <button type="button" class="btn btn-dark btn-lg"><%= link_to "Ingresar proyecto", new_proyect_path %></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div class="card" style="width: 18rem;; height: 24rem">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQCdKYEOxfHkjWstsbPcl655wyARzanUGkA&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 18rem;; height: 24rem">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6v-6xQJ7LFnn53MrRIOqUItZNeCMw_MyhOWB4JU1xJ75LSXLl4wFc5dZ0aNUVpGw38Vw&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 18rem; height: 24rem">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxM6DizIlmN8m4mKcQ7aPMFgwxVhLou1tug&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 18rem;; height: 24rem">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbwmhiS61kRI9zR7PanQDO6IHTHbaeWutZw&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="proyects">
+  <% @proyects.each do |proyect| %>
+    <%= render proyect %>
+    <p>
+      <%= link_to "Show this proyect", proyect %>
+    </p>
+  <% end %>
+</div>
+

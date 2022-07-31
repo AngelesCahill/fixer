@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row text-center ms-auto me-auto">
+    <div class="col-4 ms-auto me-auto my-5">
+      <div class="card" style="width: 24rem; height: 33rem">
+        <div class="card-body">
+          <h1>Mi proyecto</h1>
+          <%= render "form", proyect: @proyect %>
+          <br>
+          <div>
+            <%= link_to "Back to proyects", proyects_path %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
