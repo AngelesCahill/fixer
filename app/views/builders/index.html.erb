@@ -21,36 +21,37 @@
         <div class="card-body">
           <h5 class="card-title">Quieres ser parte de este Equipo?</h5>
           <p class="card-text">Solo registrate como Constructor y ya estarás siendo parte de nuestro equipo y recibiendo proyectos para cotizar. Así de fácil!!!</p>
-          <button type="button" class="btn btn-dark btn-lg"><%= link_to "Registrarme ", new_builder_path %></button>
+          <button type="button" class="btn btn-dark btn-lg">Registrarme</button>
         </div>
       </div>
     </div>
   </div>
-
 </div>
 
 <div id="proyects">
-  <% @proyects.each do |proyect| %>
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Apellido</th>
-        <th scope="col">Rut</th>
-        <th scope="col">Mail</th>
-        <th scope="col">Región</th>
-        <th scope="col">Descripción</th>
-        <th scope="col"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <%= render proyect %>
-      </tr>
+    <table class="table table-hover mt-5">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Región</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @proyects.each do |proyect| %>
+        <tr>
+        
+            <td><%= proyect.id %></td>
+            <td><%= proyect.name %></td>
+            <td><%= proyect.lastname %></td>
+            <td><%= proyect.region %></td>
+            <td><%= link_to "Contactar", new_builder_path(@proyect) %></td>
+        </tr>
+        <% end %>
     </tbody>
   </table>
-  <% end %>
 </div> 
 
     <!-- <div id="builders">

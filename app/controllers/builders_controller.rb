@@ -14,6 +14,7 @@ class BuildersController < ApplicationController
   # GET /builders/new
   def new
     @builder = Builder.new
+    @proyect = Proyect.all
   end
 
   # GET /builders/1/edit
@@ -66,6 +67,6 @@ class BuildersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def builder_params
-      params.require(:builder).permit(:name, :proyect_id)
+      params.require(:builder).permit(:name, :proyect_id, :email)
     end
 end

@@ -3,6 +3,7 @@
 <%= render @proyect %>
 
 <div>
+  <%= link_to "Show this proyect", proyect %>
   <%= link_to "Edit this proyect", edit_proyect_path(@proyect) %> |
   <%= link_to "Pagar", new_payment_path(@proyect[:id]) %>
 
