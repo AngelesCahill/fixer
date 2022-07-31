@@ -1,38 +1,13 @@
 <div id="<%= dom_id proyect %>">
-    <p>
-    <strong>ID:</strong>
+  <th>    
     <%= proyect.id %>
     <span style="color: red;">Recuerde este ID, lo necesitará para pagar</span>
-  </p>
-
-  <p>
-    <strong>Name:</strong>
-    <%= proyect.name %>
-  </p>
-
-  <p>
-    <strong>Lastname:</strong>
-    <%= proyect.lastname %>
-  </p>
-
-  <p>
-    <strong>Rut:</strong>
-    <%= proyect.rut %>
-  </p>
-
-  <p>
-    <strong>Email:</strong>
-    <%= proyect.email %>
-  </p>
-
-  <p>
-    <strong>Region:</strong>
-    <%= proyect.region %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= proyect.description %>
-  </p>
-
+  </th>
+  <td><%= proyect.name %></td>
+  <td><%= proyect.lastname %></td>
+  <td><%= proyect.rut %></td>
+  <td><%= proyect.email %></td>
+  <td><%= proyect.region %></td>
+  <td><%= proyect.description %></td>
+  <td><%= link_to "Show this proyect", proyect %></td>
 </div>
