@@ -84,5 +84,5 @@ test:
 production:
   <<: *default
   database: fixer_production
-  username: fixer
-  password: <%= ENV["FIXER_DATABASE_PASSWORD"] %>
+  username: postgres
+  password: mao9684
