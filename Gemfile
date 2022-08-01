@@ -10,7 +10,7 @@ gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 gem "sprockets-rails"
 
 # Use postgresql as the database for Active Record
-gem "pg", "~> 1.1"
+#gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -76,5 +76,7 @@ group :production do
   gem 'spring-commands-rackup', '~> 0.1.0'
   gem 'jetty-rackup', '~> 7.2'
   gem 'rack-cluster', '~> 0.0.1'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
