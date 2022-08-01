@@ -72,4 +72,4 @@ group :test do
 end
 
 # source 'https://rubygems.org'
-gem 'rackup'
+gem 'jetty-rackup', '~> 7.2'
