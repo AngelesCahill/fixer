@@ -59,8 +59,9 @@ group :development do
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   gem "rack-mini-profiler"
+  
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  gem "spring"
 end
 
 group :test do
@@ -71,6 +72,7 @@ group :test do
 end
 
 group :production do
+  gem 'spring-commands-rackup', '~> 0.1.0'
   gem 'jetty-rackup', '~> 7.2'
 end
 
